@@ -136,6 +136,9 @@ pub use crate::treebuilder::TreeBuilder;
 pub use crate::util::IntoCString;
 pub use crate::worktree::{Worktree, WorktreeAddOptions, WorktreeLockStatus, WorktreePruneOptions};
 
+// TODO(dzfranklin): Temporary workaround
+pub use util::path_to_repo_path;
+
 // Create a convinience method on bitflag struct which checks the given flag
 macro_rules! is_bit_set {
     ($name:ident, $flag:expr) => {
